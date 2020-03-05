@@ -1,7 +1,9 @@
+# Importing the required libraries.
 import random
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
+# Defining Bubble Sort function (generator).
 def bubbleSort(lst):
     
     if(len(lst)==1):
@@ -13,6 +15,7 @@ def bubbleSort(lst):
                 lst[j], lst[j+1] = lst[j+1], lst[j]
             yield lst
 
+# calling the main function
 if __name__ == "__main__":
     
     n = int(input("Enter the number of integers: "))
